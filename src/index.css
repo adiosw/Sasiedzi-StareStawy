@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Ukrywanie paska przewijania dla horyzontalnych kategorii */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Bezpieczny odstęp dla iPhone z home barem */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0.75rem);
+  }
+}
+
+/* Dostosowanie kontenera Leaflet i markerów dla Starych Stawów */
+.leaflet-container {
+  font-family: inherit;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0.75rem !important;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  font-weight: bold !important;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+}
+
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+  background-color: #f1f5f9 !important;
+  color: #047857 !important;
+}
+
+.custom-map-marker,
+.new-pin-marker,
+.minimap-pin,
+.user-gps-marker {
+  background: transparent !important;
+  border: none !important;
+}

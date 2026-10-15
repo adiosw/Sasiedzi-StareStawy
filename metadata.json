@@ -1,0 +1,6 @@
+{
+  "name": "Stare Stawy — Sąsiedzi",
+  "description": "Lokalna platforma społecznościowa dla mieszkańców osiedla Stare Stawy w Oświęcimiu. Tablica sąsiedzka, pomoc, pożyczalnia rzeczy, alerty i fachowcy.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

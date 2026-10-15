@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="pond" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with subtle rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  
+  <!-- Outer glowing rings representing neighborhood & pond ripples -->
+  <circle cx="256" cy="380" r="190" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="8"/>
+  <circle cx="256" cy="380" r="140" fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="6"/>
+
+  <!-- Pond surface motif -->
+  <path d="M 120 400 C 180 375, 332 375, 392 400 C 352 430, 160 430, 120 400 Z" fill="url(#pond)"/>
+
+  <!-- Neighborhood houses (Stare Stawy) -->
+  <!-- Left House -->
+  <polygon points="170,225 110,275 110,360 230,360 230,275" fill="#f8fafc" opacity="0.92"/>
+  <polygon points="170,205 95,270 120,270 170,230 220,270 245,270" fill="#e2e8f0"/>
+  <rect x="145" y="290" width="30" height="30" rx="4" fill="#0f766e"/>
+  <rect x="157" y="290" width="4" height="30" fill="#f8fafc"/>
+  <rect x="145" y="303" width="30" height="4" fill="#f8fafc"/>
+
+  <!-- Main Center House (taller, welcoming) -->
+  <polygon points="266,140 186,210 186,360 346,360 346,210" fill="#ffffff"/>
+  <polygon points="266,120 170,205 195,205 266,145 337,205 362,205" fill="#f1f5f9"/>
+  <!-- Welcoming doorway -->
+  <path d="M 246 295 A 20 20 0 0 1 286 295 L 286 360 L 246 360 Z" fill="#15803d"/>
+  <!-- Warm window -->
+  <circle cx="266" cy="225" r="20" fill="#fef08a"/>
+  <line x1="266" y1="205" x2="266" y2="245" stroke="#ffffff" stroke-width="3"/>
+  <line x1="246" y1="225" x2="286" y2="225" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Right House -->
+  <polygon points="362,225 302,275 302,360 422,360 422,275" fill="#f8fafc" opacity="0.92"/>
+  <polygon points="362,205 287,270 312,270 362,230 412,270 437,270" fill="#e2e8f0"/>
+  <rect x="350" y="290" width="30" height="30" rx="4" fill="#0f766e"/>
+  <rect x="362" y="290" width="4" height="30" fill="#f8fafc"/>
+  <rect x="350" y="303" width="30" height="4" fill="#f8fafc"/>
+
+  <!-- Little heart / handshake community badge at top right -->
+  <g transform="translate(350, 110)">
+    <circle cx="25" cy="25" r="32" fill="#ef4444"/>
+    <path d="M 25 38 C 25 38 12 29 12 20 C 12 15 16 11 21 11 C 23.5 11 25 12.5 25 12.5 C 25 12.5 26.5 11 29 11 C 34 11 38 15 38 20 C 38 29 25 38 25 38 Z" fill="#ffffff"/>
+  </g>
+</svg>

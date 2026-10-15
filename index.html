@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Stare Stawy — Sąsiedzi | Lokalna Społeczność Oświęcim</title>
+    <meta name="description" content="Ultra-lokalna platforma dla mieszkańców osiedla Stare Stawy w Oświęcimiu. Tablica ogłoszeń, pożyczalnia rzeczy, pomoc sąsiedzka, alerty i lokalni fachowcy." />
+    
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:title" content="Stare Stawy — Sąsiedzi | Lokalna Społeczność Oświęcim" />
+    <meta property="og:description" content="Ultra-lokalna platforma dla mieszkańców osiedla Stare Stawy w Oświęcimiu. Pożyczaj, pomagaj, sprawdzaj co dzieje się obok Ciebie." />
+    <meta property="og:site_name" content="Stare Stawy — Sąsiedzi" />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:secure_url" content="/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1376" />
+    <meta property="og:image:height" content="768" />
+    <meta property="og:image:alt" content="Stare Stawy — Sąsiedzi. Platforma Społecznościowa Oświęcim" />
+    
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Stare Stawy — Sąsiedzi | Osiedle w Oświęcimiu" />
+    <meta name="twitter:description" content="Pożycz. Pomóż. Zapytaj. Oddaj. Dowiedz się, co dzieje się obok Ciebie na Starych Stawach." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Stare Stawy — Sąsiedzi. Platforma Społecznościowa Oświęcim" />
+
+    <!-- PWA & Mobile Web App -->
+    <meta name="theme-color" content="#15803d" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Sąsiedzi" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Stare Stawy — Sąsiedzi",
+      "applicationCategory": "SocialNetworkingApplication",
+      "operatingSystem": "All",
+      "description": "Lokalna platforma społecznościowa dla mieszkańców osiedla Stare Stawy w Oświęcimiu.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Stare Stawy, Oświęcim, Polska"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PLN"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-100 selection:text-emerald-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
